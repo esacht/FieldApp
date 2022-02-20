@@ -17,5 +17,12 @@ namespace FieldApp
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            Event @event = new Event();
+            @event.Name = "Hammer";
+            this.Text = "FieldApp - " + @event.Name;
+        }
     }
 }
